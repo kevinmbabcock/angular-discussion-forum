@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
+import { SportsComponent } from './sports/sports.component';
+import { CookingComponent } from './cooking/cooking.component';
+import { routing } from './app.routing';
+import { CategoriesComponent } from './categories/categories.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SportsComponent,
+    CookingComponent,
+    CategoriesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
