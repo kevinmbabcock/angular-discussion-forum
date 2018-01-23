@@ -11,6 +11,8 @@ import { routing } from './app.routing';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryPipe } from './category.pipe';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { AddPostComponent } from './add-post/add-post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 
 
@@ -21,7 +23,9 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     CookingComponent,
     CategoriesComponent,
     CategoryPipe,
-    PostDetailComponent
+    PostDetailComponent,
+    AddPostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,

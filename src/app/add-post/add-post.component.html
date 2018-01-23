@@ -1,0 +1,23 @@
+<h2>Fill out this form to create a new post</h2>
+
+<div>
+  <label>Enter Post Title:</label>
+  <input #newPostTitle>
+</div>
+<div>
+  <label>Author:</label>
+  <input #newPostAuthor>
+</div>
+<div>
+  <label>Content:</label>
+  <input #newPostContent>
+</div>
+<div>
+  <label>Category:</label>
+  <select #newPostCategory>
+    <option value='sportsPost'>Sports</option>
+    <option value='cookingPost'>Cooking</option>
+  </select>
+  <br>
+  <button (click)="submitForm(newPostTitle.value, newPostAuthor.value, newPostContent.value, newPostCategory.value)">Add</button>
+</div>

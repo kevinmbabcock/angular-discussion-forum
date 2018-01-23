@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from './post.model';
+import { POSTS } from './mock-post';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Forum Posts:';
+  title = 'Our Forums:';
+
+  addNewPost(newPost) {
+    POSTS.push(newPost);
+  }
+
+  // @Input() childPostList: Post[];
 }

@@ -11,6 +11,11 @@ export class PostService {
     return POSTS;
   }
 
+  addPost(thisPost) {
+    thisPost.id = POSTS.length + 1;
+    POSTS.push(thisPost);
+  }
+
   getPostById(postId: number) {
     for (let i = 0; i < POSTS.length; i++) {
       if (POSTS[i].id === postId) {
