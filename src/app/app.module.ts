@@ -10,6 +10,7 @@ import { CookingComponent } from './cooking/cooking.component';
 import { routing } from './app.routing';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryPipe } from './category.pipe';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 
 
@@ -19,7 +20,8 @@ import { CategoryPipe } from './category.pipe';
     SportsComponent,
     CookingComponent,
     CategoriesComponent,
-    CategoryPipe
+    CategoryPipe,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
