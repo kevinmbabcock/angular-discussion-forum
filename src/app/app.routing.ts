@@ -30,9 +30,14 @@ const appRoutes: Routes = [
     component: AddPostComponent
   },
   {
-    path: 'edit-post',
+    path: 'cooking/edit-post/:id',
     component: EditPostComponent
   }
+  {
+    path: 'sports/edit-post/:id',
+    component: EditPostComponent
+  }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

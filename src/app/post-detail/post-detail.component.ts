@@ -5,6 +5,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
+  // the selector
   selector: 'app-post-detail',
   templateUrl: './post-detail.component.html',
   styleUrls: ['./post-detail.component.css'],

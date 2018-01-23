@@ -16,6 +16,7 @@ import { EditPostComponent } from './edit-post/edit-post.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { EditPostComponent } from './edit-post/edit-post.component';
     CategoryPipe,
     PostDetailComponent,
     AddPostComponent,
-    EditPostComponent
+    EditPostComponent,
+
   ],
   imports: [
     BrowserModule,
