@@ -1,1 +1,5 @@
 <h3>Cooking</h3>
+
+<div *ngFor="let post of posts | category:filterByCategory">
+  <h3><em>{{post.title}}</em> by {{post.author}}</h3>
+</div>
