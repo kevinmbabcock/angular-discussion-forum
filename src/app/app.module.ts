@@ -9,6 +9,7 @@ import { SportsComponent } from './sports/sports.component';
 import { CookingComponent } from './cooking/cooking.component';
 import { routing } from './app.routing';
 import { CategoriesComponent } from './categories/categories.component';
+// import { CompletenessPipe } from './completeness.pipe';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CategoriesComponent } from './categories/categories.component';
     SportsComponent,
     CookingComponent,
     CategoriesComponent
+    // CompletenessPipe
   ],
   imports: [
     BrowserModule,

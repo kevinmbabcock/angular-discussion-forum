@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./sports.component.css']
 })
 export class SportsComponent {
-
+  // filterByCompleteness: string = "sportsPost";
+  //
+  // onChange(optionFromMenu) {
+  // this.filterByCompleteness = sportsPost;
+  // }
 
 
 }
