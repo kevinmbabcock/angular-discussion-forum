@@ -2,11 +2,11 @@
 
 <div>
   <label>Enter New Title:</label>
-  <input #editPostTitle>
+  <input [(ngModel)] = "this.currentPost.title" #editPostTitle>
 </div>
 <div>
   <label>New Content:</label>
-  <input #editPostContent>
+  <input [(ngModel)] = "this.currentPost.content" #editPostContent>
 </div>
 <div>
   <label>New Category:</label>

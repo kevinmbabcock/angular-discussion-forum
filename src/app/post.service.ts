@@ -4,7 +4,7 @@ import { POSTS } from './mock-post';
 
 @Injectable()
 export class PostService {
-
+  selectedPost = null;
   constructor() { }
 
   getPosts() {
@@ -23,5 +23,11 @@ export class PostService {
       }
     }
   }
+
+  editPost(clickedPost) {
+    this.selectedPost = clickedPost;
+  }
+
+
 
 }
