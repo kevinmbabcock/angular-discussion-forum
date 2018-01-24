@@ -12,10 +12,8 @@ export class AddPostComponent implements OnInit {
 
   constructor(private postService: PostService) {}
 
-  exampleCat = "category";
-
   submitForm(title: string, author: string, content: string, category: string) {
-    let newPostToAdd: Post = new Post(title, author, content, category, null);
+    const newPostToAdd: Post = new Post(title, author, content, category, null);
 
     this.postService.addPost(newPostToAdd);
   }

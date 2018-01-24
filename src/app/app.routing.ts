@@ -32,7 +32,7 @@ const appRoutes: Routes = [
   {
     path: 'cooking/edit-post/:id',
     component: EditPostComponent
-  }
+  },
   {
     path: 'sports/edit-post/:id',
     component: EditPostComponent

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class SportsComponent implements OnInit {
   // linter requests to remove type 'string', will not work without declaration
-  filterByCategory: string = 'sportsPost';
+  filterByCategory = 'sportsPost';
   posts: Post[];
 
   constructor(private router: Router, private postService: PostService) {}

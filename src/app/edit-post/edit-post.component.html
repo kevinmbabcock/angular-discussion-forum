@@ -1,3 +1,19 @@
-<p>
-  edit-post works!
-</p>
+<h2>Edit:</h2>
+
+<div>
+  <label>Enter New Title:</label>
+  <input #editPostTitle>
+</div>
+<div>
+  <label>New Content:</label>
+  <input #editPostContent>
+</div>
+<div>
+  <label>New Category:</label>
+  <select #editPostCategory>
+    <option value='sportsPost'>Sports</option>
+    <option value='cookingPost'>Cooking</option>
+  </select>
+  <br>
+  <button (click)="submitForm(editPostTitle.value, editPostContent.value, editPostCategory.value)">Edit</button>
+</div>
