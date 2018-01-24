@@ -15,24 +15,21 @@ import { POSTS } from '../mock-post';
 })
 export class EditPostComponent implements OnInit {
   postId: number;
+  currentPost: Post;
 
   constructor(private route: ActivatedRoute, private location: Location, private postService: PostService) { }
 
   submitForm(title: string, content: string, category: string) {
-    const postToEditIndex = this.postService.getPostIndexForUpdate(this.postId);
-    POSTS[postToEditIndex].title = title;
-    POSTS[postToEditIndex].content = content;
-    POSTS[postToEditIndex].category = category;
-
-
-
+    this.currentPost.title = title;
+    this.currentPost.content = content;
+    this.currentPost.category = category;
   }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.postId = parseInt(urlParameters['id'], 10);
     });
-    // this.postId = this.postService.getPostById(this.postId);
+    this.currentPost = this.postService.getPostById(this.postId);
   }
 
 }

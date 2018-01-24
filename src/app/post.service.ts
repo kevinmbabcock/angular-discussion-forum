@@ -24,11 +24,4 @@ export class PostService {
     }
   }
 
-  getPostIndexForUpdate(postId: number) {
-    for (let i = 0; i < POSTS.length; i++) {
-      if (POSTS[i].id === postId) {
-        return i;
-      }
-    }
-  }
 }
